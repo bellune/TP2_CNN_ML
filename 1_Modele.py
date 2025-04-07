@@ -304,16 +304,7 @@ classifier = model.fit(x_train, y_train,
                        verbose=1, # mets cette valeur ‡ 0, si vous voulez ne pas afficher les détails d'entrainement
                        callbacks=[modelcheckpoint, early_stop, reduce_lr], # les fonctions à appeler à la fin de chaque époque (dans ce cas modelcheckpoint: qui sauvegarde le modèle)
                        shuffle=True)# shuffle les images
-# classifier = model.fit(
-#     training_generator,
-#     epochs=fit_epochs,
-#     validation_data=validation_generator,
-#     steps_per_epoch=training_generator.samples // training_batch_size,
-#     validation_steps=validation_generator.samples // validation_batch_size,
-#     callbacks=[modelcheckpoint, early_stop],
-#     verbose=1,
-#     shuffle=True
-# )
+
 
 
 # ==========================================
